@@ -21,7 +21,7 @@ public class SerTest {
             ted.setSpouse(charl);
             charl.setSpouse(ted);
 
-            FileOutputStream fos = new FileOutputStream("tempdata.ser");
+            FileOutputStream fos = new FileOutputStream("/home/yong/IdeaProjects/tempdata.ser");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(ted);
             oos.close();
@@ -30,7 +30,7 @@ public class SerTest {
         }
 
         try {
-            FileInputStream fis = new FileInputStream("tempdata.ser");
+            FileInputStream fis = new FileInputStream("/home/yong/IdeaProjects/tempdata.ser");
             ObjectInputStream ois = new ObjectInputStream(fis);
             Person ted = (Person) ois.readObject();
             ois.close();

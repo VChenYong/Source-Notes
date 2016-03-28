@@ -2,6 +2,8 @@ package yong.note.Java.serialization;
 
 /**
  * Created by yong on 28/03/16.
+ * Example took from http://www.ibm.com/developerworks/library/j-5things1/
+ * 5 things you didn't know about ... Java Object Serialization
  */
 public class Person
         implements java.io.Serializable {
